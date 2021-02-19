@@ -16,7 +16,7 @@ public class Definitions {
 	
     @Given("^User is present on Google home page$")
     public void user_is_present_on_Google_home_page() {
-    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\CucumberSet\\test-cucumber\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
     	driver = new ChromeDriver();
     	driver.get("https://www.google.com");
     	driver.manage().window().maximize();
